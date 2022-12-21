@@ -147,21 +147,32 @@ hr {
     align-items: center;
     width: 100%;
     height: 500px;
+    color: gray;
   }
   .item1 {
     height: 300px;
     width: 300px;
-    border: 1px solid black;
   }
   .item2 {
     height: 300px;
     width: 300px;
-    border: 1px solid black;
   }
   .item3 {
     height: 300px;
     width: 300px;
-    border: 1px solid black;
+  }
+  .showitems a {
+    margin-left: 95px;
+    color: rgba(19, 117, 58, 0.911);
+    font-size: 20px;
+  }
+  .item1,.item2,.item3 { transition: all .2s ease-in-out; }
+  .item1:hover { transform: scale(1.1); }
+  .item2:hover { transform: scale(1.1); }
+  .item3:hover { transform: scale(1.1); }
+  .showitems a:hover {
+    color: black;
+    transition: .5s;
   }
 /* Footer */
   .container{
