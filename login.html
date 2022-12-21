@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fit+ - Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="js/validation.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="nav">
+        <div class="nav1">
+            <ul>
+                <li><a href="index.html" class="hovernav">Home</a></li>
+                <li><a href="" class="hovernav">Store</a></li>
+                <li><a href="" class="hovernav">About</a></li>
+            </ul>
+        </div>
+        <div class="nav2">
+            <ul>
+                <li>fit<span>+</span></li>
+            </ul>
+        </div>
+        <div class="nav3">
+            <ul>
+                <li><a href="" class="hovernav">Sign in</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div class="center">
+        <h1>Login</h1>
+        <form method="post" onsubmit="return validate()">
+          <div class="txt_field">
+            <input type="text" name="username" id="user" required>
+            <span></span>
+            <label for="username">Username</label>
+          </div>
+          <div class="txt_field">
+            <input type="password" name="password" id="pass" required>
+            <span></span>
+            <label for="password" >Password</label>
+          </div>
+          <input type="submit" name="login-btn" value="Login">
+          <div class="signup_link">
+            Not a member? <a href="#">Signup</a>
+          </div>
+        </form>
+      </div>
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="store.html">Store</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="login.html">Sign in</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <ul class="cnt">
+                        <li>+383 49 000 000</li>
+                        <li>+383 44 000 000</li>
+                        <li>gofly@kosovo.com</li>
+                        <li>Bill Clinton, Prishtine, 10000</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    
+</body>
+</html>
