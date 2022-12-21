@@ -135,6 +135,12 @@
 .trupi h1 {
   font-size: 36px;
 }
+
+hr {
+  width: 70%;
+  margin: 0 auto;
+  color: gray;
+}
 /* Footer */
   .container{
     max-width: 1170px;
