@@ -141,7 +141,6 @@
   .card:hover {
     transform: translateY(-10px);
     transition: .50s;
-    background-image: none;
   }
   p:hover{
     background-image: none;
