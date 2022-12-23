@@ -68,8 +68,9 @@
     color: rgba(19, 117, 58, 0.911);
   }
   /* Header Picture */
-  img {
+  #mainF {
     width: 100%;
+    height: 650px;
     opacity: 95%;
   }
   .trupi{
@@ -80,7 +81,8 @@
     margin-bottom: 50px;
 }
 .trupi img{
-    width: 100%;
+    width: 700px;
+    height: 450px;
 }
 .fit1{
     width: 45%;
@@ -157,13 +159,22 @@ hr {
     height: 300px;
     width: 300px;
   }
+  .item1 img {
+    width: 100%;
+  }
   .item2 {
     height: 300px;
     width: 300px;
   }
+  .item2 img {
+    width: 100%;
+  }
   .item3 {
     height: 300px;
     width: 300px;
+  }
+  .item3 img {
+    width: 100%;
   }
   .showitems a {
     margin-left: 95px;
@@ -250,11 +261,10 @@ hr {
 .subscribe-box span {
   color: #999;
   font-size: 16px;
-  text-transform: capitalize;
 }
 .subscribe-box hr {
   width: 70px;
-  color: #999;
+  color: rgba(19, 117, 58, 0.911);
   margin: 25px auto;
 }
 .subscribe-box input {
