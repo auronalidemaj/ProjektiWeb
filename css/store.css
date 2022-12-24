@@ -68,10 +68,14 @@
     color: rgba(19, 117, 58, 0.911);
   }
 
+.shop {
+    display: flex;
+    flex-direction: row;
 
+    justify-content: center;
+}
 .filtrimi {
     font-weight: bold;
-    margin-left: 30px;
     font-size: 24px;
     width: 350px;
     height: 2000px;
@@ -79,6 +83,75 @@
     display: flex;
     justify-content: flex-start;
 }
+.kolon  {
+    display: flex;
+    flex-direction: column;
+}
+.produktet {
+    width: 1200px;
+}
+.rreshti {
+    justify-content: space-around;
+    align-items: top;
+    height: 9.2cm;
+    width: 1200px;
+    font-size: 13px;
+    display: flex;
+}
+.rreshti2 {
+    justify-content: space-around;
+    align-items: top;
+    height: 9.2cm;
+    width: 1200px;
+    font-size: 13px;
+    display: flex;
+}
+.p{
+    height: 18cm;
+    width: 15cm;
+    margin: 1cm;
+    font-size: 30px;
+    text-align: center;
+}
+.i{
+    
+    width: 400px;
+    height: 350px;
+    border: 1px solid purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.i img {
+    width: 270px;
+    height: 270px;
+}
+.item1 {
+    width: 15cm;
+    height: 15cm;
+}
+.item2 {
+    width: 15cm;
+    height: 15cm;
+}
+.item3 {
+    width: 15cm;
+    height: 15cm;
+}
+.item4 {
+    width: 15cm;
+    height: 15cm;
+}
+.item5 {
+    width: 15cm;
+    height: 15cm;
+}
+.item6 {
+    width: 15cm;
+    height: 15cm;
+}
+
 .butoni {
     font-size: 20px;
     color: black;
