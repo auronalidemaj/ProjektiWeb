@@ -87,7 +87,7 @@
   .textimg button{
     position: absolute;
     left: 20px;
-    width: 150px;
+    width: 250px;
     height: 50px;
     font-size: 30px;
     background-color: transparent;
@@ -99,7 +99,6 @@
     cursor: pointer;
     color: rgba(19, 117, 58, 0.911);
     border-color: rgba(19, 117, 58, 0.911);
-    transform: scale(1.2);
     transition: .5s;
   }
   .trupi{
