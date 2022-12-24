@@ -7,7 +7,9 @@
     list-style: none;
     box-sizing: border-box;
   }
-  
+  html{
+    scroll-behavior: smooth;
+  }
   /* Navbar */
   .nav {
     width: 100%;
@@ -182,21 +184,35 @@
     padding: 40px;
     font-weight: bold;
   }
-  .mbas-permbajtjes{
-    height: 700px;
-    width: 700px;
-    display:flex;
+  .txtOur {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
   }
-  .video{
-    height: 400px;
-    width: 400px;
-    background-color: #bbbbbb;
-  }
-  .teksti{
-    height: 100px;
-    width: 100px;
-    background-color: #bbbbbb;
-  }
+.txtOur1 h1 {
+  font-size: 36px;
+  color: black;
+  margin-bottom: 15px;
+  font-weight: 700px;
+  justify-content: center;
+}
+.txtOur1 span {
+  color:gray;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  font-weight: 700px;
+  justify-content: center;
+}
+.txtOur1 hr {
+  width: 100px;
+  color: rgba(19, 117, 58, 0.911);
+  margin: 25px auto;
+}
+
+
+
 
   /* footer */
   .container{
