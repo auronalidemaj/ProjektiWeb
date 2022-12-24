@@ -69,89 +69,62 @@
   }
 
 .shop {
+    border-top: 1px solid gray;
     display: flex;
     flex-direction: row;
-
-    justify-content: center;
-}
-.filtrimi {
-    font-weight: bold;
-    font-size: 24px;
-    width: 350px;
-    height: 2000px;
-    border-right: 1px solid gray;
-    display: flex;
     justify-content: flex-start;
-}
-.kolon  {
-    display: flex;
-    flex-direction: column;
-}
-.produktet {
-    width: 1200px;
-}
-.rreshti {
-    justify-content: space-around;
-    align-items: top;
-    height: 9.2cm;
-    width: 1200px;
-    font-size: 13px;
-    display: flex;
-}
-.rreshti2 {
-    justify-content: space-around;
-    align-items: top;
-    height: 9.2cm;
-    width: 1200px;
-    font-size: 13px;
-    display: flex;
-}
-.p{
-    height: 18cm;
-    width: 15cm;
-    margin: 1cm;
-    font-size: 30px;
-    text-align: center;
-}
-.i{
-    
-    width: 400px;
-    height: 350px;
-    border: 1px solid purple;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.i img {
-    width: 270px;
-    height: 270px;
-}
-.item1 {
-    width: 15cm;
-    height: 15cm;
-}
-.item2 {
-    width: 15cm;
-    height: 15cm;
-}
-.item3 {
-    width: 15cm;
-    height: 15cm;
-}
-.item4 {
-    width: 15cm;
-    height: 15cm;
-}
-.item5 {
-    width: 15cm;
-    height: 15cm;
-}
-.item6 {
-    width: 15cm;
-    height: 15cm;
-}
+    width: 100%;
 
+}
+.dropbtn {
+    background-color: rgb(44, 43, 43);
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    width: 300px;
+    font-size: 20px;
+    border: none;
+
+  }
+
+  .dropdown {
+    width: 300px;
+    height: 1200px;
+    position: relative;
+    display: inline-block;
+    background-color:  rgb(255, 255, 255);
+
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content button {
+    background: transparent;
+    border: none;
+  }
+
+  .dropdown-content button a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+  }
+
+
+  .dropdown-content button a:hover {background-color: rgba(19, 117, 58, 0.911);
+color: #000000;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {
+    border: none;
+    color: #ffffff;
+}
 .butoni {
     font-size: 20px;
     color: black;
@@ -161,6 +134,36 @@
 .butoni:hover {
     color: green;
     cursor: pointer;
+}
+.rreshti {
+    width: 1200px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 17px;
+
+}
+.item {
+    width: 300px;
+    height: 360px;
+    border: 1px solid gray;
+}
+.item img{
+    width: 250px;
+    height: 250px;
+}
+.item button {
+    font-size: 16px;
+    width: 100px;
+    color: black;
+    background-color: transparent;
+    cursor: pointer;
+}
+.item button:hover {
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 
