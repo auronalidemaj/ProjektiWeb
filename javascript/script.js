@@ -1,7 +1,7 @@
 var vargu = [
-    '/img/foto.jpg',
-    '/img/man1.jpg',
-    '/img/running.jpg'
+    'img/foto.jpg',
+    'img/man1.jpg',
+    'img/running.jpg'
 ];
 
 var index = 0;
