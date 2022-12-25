@@ -16,7 +16,7 @@ function validated(){
         email.focus();
         return false 
     }
-    if(name1.value.length < 9){
+    if(name1.value.length < 6){
         name1_error.style.display = "block"
         name1.focus();
         return false 
