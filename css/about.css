@@ -96,7 +96,7 @@
   p{
     color:white;
     font-size:14px;
-    line-height: 15px;
+    line-height: 20px;
   }
   button{
     position: absolute;
@@ -379,18 +379,18 @@ hr {
   font-size: 20px;
 }
 .p1{
-  height: 300px;
-  width: 300px;
+  height: 100px;
+  width: 24%;
   float: left;
 }
 .p2{
-  height: 300px;
-  width: 300px;
+  height: 100px;
+  width: 24%;
   float: left;
 }
 .p3{
-  height: 300px;
-  width: 300px; 
+  height: 100px;
+  width: 24%;
   float:right;
 
 }
