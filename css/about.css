@@ -98,16 +98,71 @@
     line-height: 15px;
   }
   button{
-    width:180px;
-    color:block;
-    font-size:15px;
-    padding:12px 0;
-    background:#fff;
-    border: 0;
-    border-radius: 20px;
-    outline:none;
-    margin-top:30px;
+    position: absolute;
+    left: 40px;
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
   }
+  button{
+    background: none;
+    color: #ccc;
+    width: 200px;
+    height: 50px;
+    margin: 15px;
+    border: 1px solid #338033;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+  }
+  button:focus {
+    outline: none;
+
+  }
+  button:before{
+    content:'';
+    display: block;
+    position: absolute;
+    background:rgb(255,255,255,.5) ;
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px)skewX(-15deg);
+
+  }
+  button:after{
+    content:'';
+    display: block;
+    position: absolute;
+    background:rgb(255,255,255,.2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100)scaleX(-15deg);
+
+  }
+ button:hover {
+  background: #338033;
+  cursor: pointer;
+  }
+  button:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+  }
+  button:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+  }
+  
   .card{
     width:200px;
     height:270px;
@@ -210,6 +265,11 @@
   color: rgba(19, 117, 58, 0.911);
   margin: 25px auto;
 }
+hr {
+  width: 70%;
+  margin: 0 auto;
+  color: gray;
+}
 
 .our-classes {
   background-color: #000;
@@ -231,7 +291,7 @@
 }
 
 .our-classes h3 {
-  background-color: #000000;
+  background-color:rgba(19, 117, 58, 0.911);;
   border: 2px solid #fff;
   color: #fff;
   font-size: 1em;
@@ -250,7 +310,7 @@
   left: 0;
   right: 0;
   transition: all 0.35s ease;
-  background-color:black;
+  background-color:  rgba(19, 117, 58, 0.911);
   border-left: 3px solid #fff;
   border-right: 3px solid #fff;
   content: '';
@@ -279,7 +339,7 @@
   z-index: 2;
   transform: translate(-50%, -50%) scale(0.5);
   opacity: 0;
-  box-shadow: 0 0 10px #000000;
+  box-shadow: 0 0 10px  rgba(19, 117, 58, 0.911);;
 }
 
 .our-classes a {
@@ -311,22 +371,76 @@
   opacity: 1;
 }
 .paragrafi{
-
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: gray;
+  color: rgba(19, 117, 58, 0.911);
   font-size: 20px;
 }
 .p1{
   height: 300px;
   width: 300px;
-  padding-left:100px;
+  float: left;
+}
+.p2{
+  height: 300px;
+  width: 300px;
+  float: left;
 }
 .p3{
   height: 300px;
   width: 300px; 
-  padding-right: 100px;  
+  float:right;
+
+}
+.coach-- {
+  font-size: 42px;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 400;
+}
+.coach {
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgb(0,0,0,.7)),url(/img/trajneri.jpg);
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.coach img {
+  width: 35%;
+  border-radius: 50%;
+}
+
+.coach h2 {
+  margin: 6px auto;
+  font-weight: 300;
+  color: white;
+}
+.coach1 {
+  width: 30%;
+}
+.coach2 {
+  width: 30%;
+}
+.coach3 {
+  width: 30%;
+}
+.coach p {
+  width: 400px;
+  margin: 10px auto;
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.coach h3 {
+  font-weight: 100;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
 
@@ -407,5 +521,4 @@
   .cnt{
       color: black;
   }
-  
   
