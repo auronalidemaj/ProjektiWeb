@@ -70,6 +70,7 @@
   .active {
     color: rgba(19, 117, 58, 0.911);
   }
+  /*Main */
   .permbajtja{
     width :100%;
     height: 100vh;
@@ -515,4 +516,3 @@ hr {
   .cnt{
       color: black;
   }
-  
