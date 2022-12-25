@@ -138,6 +138,7 @@ color: rgba(19, 117, 58, 0.911);}
     cursor: pointer;
 }
 .rreshti {
+    overflow: hidden;
     width: 1200px;
     height: 360px;
     display: flex;
@@ -155,8 +156,16 @@ color: rgba(19, 117, 58, 0.911);}
 =======
     height: 360px; 
     border: 1px solid gray;
+    display: none;
     
 >>>>>>> 9325773a876d9c935584a92d34c6cbee50e5f853
+}
+.btn.active {
+  color: rgba(19, 117, 58, 0.911);
+}
+.show {
+  display: block;
+  
 }
 .item img{
     width: 250px;
