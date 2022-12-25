@@ -86,20 +86,68 @@
   }
   .textimg button{
     position: absolute;
-    left: 20px;
-    width: 250px;
+    left: 40px;
+    width: 150px;
     height: 50px;
     font-size: 30px;
-    background-color: transparent;
-    color: white;
-    margin-top: 15px;
-    border: 1px solid white;
+  }
+  .textimg button{
+    background: none;
+    color: #ccc;
+    width: 200px;
+    height: 50px;
+    margin: 15px;
+    border: 1px solid #338033;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+  }
+  .textimg button:focus {
+    outline: none;
+
+  }
+  .textimg button:before{
+    content:'';
+    display: block;
+    position: absolute;
+    background:rgb(255,255,255,.5) ;
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px)skewX(-15deg);
+
+  }
+  .textimg button:after{
+    content:'';
+    display: block;
+    position: absolute;
+    background:rgb(255,255,255,.2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100)scaleX(-15deg);
+
   }
   .textimg button:hover {
-    cursor: pointer;
-    color: rgba(19, 117, 58, 0.911);
-    border-color: rgba(19, 117, 58, 0.911);
-    transition: .5s;
+  background: #338033;
+  cursor: pointer;
+  }
+  .textimg button:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+  }
+  .textimg button:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
   }
   .trupi{
     margin-top: 30px;

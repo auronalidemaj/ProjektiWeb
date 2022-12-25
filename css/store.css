@@ -168,16 +168,27 @@ color: rgba(19, 117, 58, 0.911);}
 .item button {
     font-size: 16px;
     width: 100px;
-    color: black;
-    background-color: transparent;
-    cursor: pointer;
+    border: 1px solid #338033;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+    background-color: white;
 }
-.item button:hover {
-    color: rgba(19, 117, 58, 0.911);
-    transform: scale(1.1);
-    transition: .5s;
-}
-
+button:hover {
+  background: #338033;
+  cursor: pointer;
+  }
+  button:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+  }
+  button:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+  }
 
 
 

@@ -394,13 +394,6 @@ hr {
   float:right;
 
 }
-.coach-- {
-  font-size: 42px;
-  line-height: 42px;
-  text-align: center;
-  margin-top: 40px;
-  font-weight: 400;
-}
 .coach {
   background-image: linear-gradient(rgba(0,0,0,0.7),rgb(0,0,0,.7)),url(../img/trajneri.jpg);
   text-align: center;
