@@ -175,20 +175,21 @@ color: rgba(19, 117, 58, 0.911);}
     overflow: hidden;
     background-color: white;
 }
-button:hover {
+.item button:hover {
   background: #338033;
   cursor: pointer;
   }
-  button:hover:before{
+  .item button:hover:before{
     transform: translateX(300px) skewX(-15deg);
     opacity: .6;
     transition: .7s;
   }
-  button:hover:after{
+  .item button:hover:after{
     transform: translateX(300px) skewX(-15deg);
     opacity: 1;
     transition: .7s;
   }
+
 
 
 
