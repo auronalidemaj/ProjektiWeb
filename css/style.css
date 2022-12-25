@@ -84,14 +84,19 @@
     font-weight: bold;
     font-size: 50px;
   }
-  .textimg button{
+  .textImg a {
+    text-align: center;
+    margin-top: 1009px;
+  }
+  .textimg button a{
+    padding-top: 10px;
     position: absolute;
     left: 40px;
     width: 150px;
     height: 50px;
     font-size: 30px;
   }
-  .textimg button{
+  .textimg button a{
     background: none;
     color: #ccc;
     width: 200px;
@@ -103,11 +108,11 @@
     transition: .6s;
     overflow: hidden;
   }
-  .textimg button:focus {
+  .textimg button a:focus {
     outline: none;
 
   }
-  .textimg button:before{
+  .textimg button a:before{
     content:'';
     display: block;
     position: absolute;
@@ -121,7 +126,7 @@
     transform: translateX(-130px)skewX(-15deg);
 
   }
-  .textimg button:after{
+  .textimg button a:after{
     content:'';
     display: block;
     position: absolute;
@@ -135,16 +140,16 @@
     transform: translate(-100)scaleX(-15deg);
 
   }
-  .textimg button:hover {
+  .textimg button a:hover {
   background: #338033;
   cursor: pointer;
   }
-  .textimg button:hover:before{
+  .textimg button a:hover:before{
     transform: translateX(300px) skewX(-15deg);
     opacity: .6;
     transition: .7s;
   }
-  .textimg button:hover:after{
+  .textimg button a:hover:after{
     transform: translateX(300px) skewX(-15deg);
     opacity: 1;
     transition: .7s;
