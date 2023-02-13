@@ -275,3 +275,109 @@ color: rgba(19, 117, 58, 0.911);}
       color: black;
   }
   
+  @media only screen and (max-width: 767px) {
+    .nav {
+      height: 40px;
+      width: 100%;
+    }
+    .nav ul li {
+      margin-left: 10px;
+      font-size: 10px;
+    }
+    .nav2 ul li {
+      margin-right: 60px;
+    }
+
+    .nav2 ul li span {
+      font-size: 12px;
+    }
+
+    .shop {
+      border-top: 1px solid gray;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+  
+  }
+  .dropbtn {
+      background-color: rgba(19, 117, 58, 0.911);
+      color: rgb(255, 255, 255);
+      padding: 10px;
+      width: 130px;
+      font-size: 12px;
+      border: none;
+  
+    }
+  
+    .dropdown {
+      width: 120px;
+      height: 50px;
+      position: relative;
+      display: inline-block;
+      background-color:  rgb(255, 255, 255);
+  
+    }
+  
+    .dropdown-content {
+      width: 130px;
+      display: none;
+      position: absolute;
+      background-color:rgb(255, 255, 255);
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content button {
+      font-size: 10px;
+    }
+  
+  .rreshti {
+      overflow: hidden;
+      width: 100%;
+      height: 1500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 16px;
+  }
+
+  .show {
+    display: block;
+    
+  }
+  .item img{
+      width: 200px;
+      height: 200px;
+  }
+  
+    .container{
+
+      max-width: 500px;
+      margin:auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 140px;
+    }
+    .row{
+      
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    ul{
+      list-style: none;
+    }
+    .footer{
+      border-top: 1px solid lightslategray;
+      background-color: white;
+        padding: 70px 0;
+    }
+    .footer-col{
+       margin-bottom: 20px;
+       width: 300px;
+    }
+  }
