@@ -24,7 +24,7 @@
     color: black;
   }
   .nav2 ul li {
-    margin-right: 200px;
+    margin-right: 350px;
   }
   .nav2 ul li span {
     font-size: 26px;
@@ -627,6 +627,7 @@ hr {
     align-items: center;
     justify-content: center;
     margin-left: 140px;
+    font-size: 12px;
   }
   .row{
     
@@ -642,6 +643,9 @@ hr {
     background-color: white;
       padding: 70px 0;
   }
+  h4 {
+    font-size: 12px ;
+}
   .footer-col{
      margin-bottom: 20px;
      width: 300px;
