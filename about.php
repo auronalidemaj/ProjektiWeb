@@ -6,31 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fit+ About</title>
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/headerandfooter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-    <nav>
-        <div class="nav">
-            <div class="nav1">
-                <ul>
-                    <li><a href="index.html" class="hovernav">home</a></li>
-                    <li><a href="store.html" class="hovernav">store</a></li>
-                    <li><a href="about.html" class="hovernav">about</a></li>
-                    <li><a href="contact.html" class="hovernav">contact</a></li>
-                </ul>
-            </div>
-            <div class="nav2">
-                <ul>
-                    <li>fit<span>+</span></li>
-                </ul>
-            </div>
-            <div class="nav3">
-                <ul>
-                    <li><a href="login.html" class="hovernav">login</a></li>
-                </ul>
-            </div>
-        </div>
-</nav>
+<?php 
+  
+  include 'header.php'?>
     <div class = "permbajtja">
         <div class ="background-image"></div>
         <div class="row">
@@ -134,39 +116,9 @@
       <p>“What hurts today makes you stronger tomorrow."</p>
       </div>
       </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Fit+</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="store.html">Store</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="login.html">Login</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact us</h4>
-                    <ul class="cnt">
-                        <li>+383 49 000 000</li>
-                        <li>+383 44 000 000</li>
-                        <li>fitplus@gym.com</li>
-                        <li>Bill Clinton, Prishtine, 10000</li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Social Media</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-   </footer>
+      <?php 
+  
+  include 'footer.php'?>
     
 </body>
 </html>
