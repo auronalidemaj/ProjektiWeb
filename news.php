@@ -18,10 +18,7 @@
         <img src="img/news/image-asset.jpeg" >
 
     </div>
-    <div class = "b"></div>
-    <div class = "c"></div>
-    <div class = "d"></div>
-    <div class = "e"></div>
+
 
  <?php 
   
