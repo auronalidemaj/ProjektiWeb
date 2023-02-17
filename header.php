@@ -6,6 +6,7 @@
                 <li><a href="store.php" class="hovernav">store</a></li>
                 <li><a href="about.php" class="hovernav">about</a></li>
                 <li><a href="contact.php" class="hovernav">contact</a></li>
+                <li><a href="news.php" class="hovernav">news</a></li>
             </ul>
         </div>
         <div class="nav2">
