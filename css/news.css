@@ -263,6 +263,47 @@ h1 {
 		left: -300%;
 	}
 }
+hr{
+	width: 1100px;
+	margin-left: 200px;
+}
+.inbody{
+	height: 300px;
+	width: 400px;
+	margin-left: 150px;
+	margin-top: 50px;
+}
+.inbody img{
+	height: 300px;
+	width: 400px;
+}
+.body-1{
+	height: 300px;
+	width: 1000px;
+	margin-left: 550px;
+	margin-top: -300px;
+	margin-bottom: -20px;
+}
+.body-1 h1 {
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 35px;
+	font-style: italic;
+}
+.body-1 img{
+	height: 300px;
+	width: 400px;
+}
+.body-1 p {
+	height: 1000px;
+	width: 900px;
+	margin-left: 30px;
+	margin-top: 200px;
+	margin-bottom: -20px;
+	font-size:15px;
+
+}
+
+
 
 
 /* Footer */
