@@ -15,7 +15,7 @@
   include 'header.php'?>
       <div class="center">
         <h1>Signup</h1>
-        <form class="login_form" action="./signup.html" method="post" name="form" onsubmit="return validated()">
+        <form class="login_form" action="./signup.php" method="post" name="form" onsubmit="return validated()">
             <div class="txt_field">
                 <input autocomplete="off" type="email" name="emailaddress" id="email" required>
                 <span></span>
@@ -36,7 +36,7 @@
           <div id="password_error">Fill out your password correctly</div>
           <input type="submit" name="login-btn" value="Signup">
           <div class="signup_link">
-            Already have an account?<a href="login.html">Login</a>
+            Already have an account?<a href="login.php">Login</a>
           </div>
         </form>
       </div>

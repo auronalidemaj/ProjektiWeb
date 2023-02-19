@@ -4,12 +4,12 @@
                 <div class="footer-col">
                     <h4>Fit+</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="store.html">Store</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="login.html">Login</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="store.php">Store</a></li>
+                        <li><a href="about.php">About</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="news.php">News</a></li>
+                        <li><a href="login.php">Login</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
