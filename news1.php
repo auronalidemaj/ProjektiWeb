@@ -16,24 +16,28 @@
 <?php
 require_once 'controllers/MenuController.php';
 ?>
+
 <style>
-    .prod {
-        width:25%;
-        height: 600px;
-        border: 1px solid black;
-    }
-    img {
-        height: 400px;
-        width: 400px;
-    }
+.all {
+  display: flex;
+  flex-wrap: wrap;
+}
     h3 {
         text-align:center;
     }
-    .all {
-        display:Flex;
-        max-width: 1600px;
+    img {
+        height: 100%;
+        width: 100%;
     }
-    </style>
+.prod {
+  width: 25%;
+
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid gray;
+}
+</style>
+
 <div class="all">
     <?php
     $products = new MenuController;
