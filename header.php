@@ -16,6 +16,7 @@
         </div>
         <div class="nav3">
             <ul>
+                <li><a href="dashboard.php" class="hovernav"    >dashboard</a></li>
                 <li><a href="login.php" class="hovernav">login</a></li>
             </ul>
         </div>
