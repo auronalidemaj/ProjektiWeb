@@ -1,5 +1,5 @@
 <?php
-require_once '../controllers/MenuController.php';
+require_once './controllers/MenuController.php';
 
 $menu = new MenuController;
 if(isset($_POST['submit'])){
@@ -8,6 +8,12 @@ if(isset($_POST['submit'])){
 
 
 ?>
+<link rel="stylesheet" href="css/headerandfooter.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<?php 
+  
+  include 'header.php'?>
+  <hr>
 <div>
     <form method="POST" class="createM">
         Image:
@@ -17,7 +23,7 @@ if(isset($_POST['submit'])){
         <input type="text" name="title" class="inputT" maxlength="50">
         <br>
         Content:
-        <textarea name="body" cols="30" rows="10" class="inputta" maxlength="100"></textarea>
+        <textarea name="body" cols="30" rows="10" class="inputta" maxlength="150"></textarea>
         <br>
         <input type="submit" name="submit" value="Save" class="but">
     </form>
@@ -31,6 +37,9 @@ if(isset($_POST['submit'])){
   margin: 20px;
 }
 
+*{
+  font-family: sans-serif; 
+}
 .inputF {
     text-align: center;
   margin: 10px 0;
@@ -67,14 +76,14 @@ if(isset($_POST['submit'])){
   padding: 5px;
   border-radius: 5px;
   border: none;
-  background-color: #0077FF;
+  background-color: rgba(19, 117, 58, 0.911);
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .but:hover {
-  background-color: #0066CC;
+  color: black;
 }
 
 </style>

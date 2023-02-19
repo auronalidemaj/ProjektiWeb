@@ -1,5 +1,5 @@
 <?php
-require_once '../config/Database.php';
+require_once './config/Database.php';
 
 class MenuController{
     public $db;
@@ -17,7 +17,7 @@ class MenuController{
     }
 
     public function insert($request){
-        $request['image'] = './images/' .$request['image'];
+        $request['image'] = './img/' .$request['image'];
         $query = $this->db->pdo->prepare('INSERT INTO menu (menu_image, menu_title, menu_body)
         VALUES (:menu_image, :menu_title, :menu_body)');
 
@@ -38,6 +38,7 @@ class MenuController{
     }
 
     public function update($request, $id){
+        $request['image'] = './img/' .$request['image'];
         $query = $this->db->pdo->prepare('UPDATE menu SET menu_image = :menu_image,
         menu_title = :menu_title, menu_body = :menu_body WHERE id = :id');
         $query->bindParam(':menu_image', $request['image']);
