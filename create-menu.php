@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
         <input type="text" name="title" class="inputT" maxlength="50">
         <br>
         Content:
-        <textarea name="body" cols="30" rows="10" class="inputta" maxlength="150"></textarea>
+        <textarea name="body" cols="30" rows="10" class="inputta" maxlength="200"></textarea>
         <br>
         <input type="submit" name="submit" value="Save" class="but">
     </form>
