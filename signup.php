@@ -13,6 +13,7 @@
 <?php 
   
   include 'header.php'?>
+  <hr>
       <div class="center">
         <h1>Signup</h1>
         <form class="login_form" action="./signup.php" method="post" name="form" onsubmit="return validated()">

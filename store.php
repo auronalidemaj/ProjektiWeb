@@ -12,8 +12,29 @@
 <body>
 <?php 
   
-  include 'header.php'?>
-<div class="shop">
+  include 'header.php';
+require_once 'storeController.php';
+?>
+<hr>
+
+<div class="all">
+    <?php
+    $products = new StoreController;
+    $all = $products->readData();
+    for($i = 0; $i < count($all); $i++) {
+        echo '<div class="prod">
+        <div class="item protein">
+            <img src="' .$all[$i]['i_image'] .'">
+        </div>
+        <div class="info">
+            <h2>' .$all[$i]['i_title'] .'</h2>
+            <p>' .$all[$i]['i_body'] .'</p>
+        </div>
+        </div>';
+    } 
+    ?>
+</div>
+<!-- <div class="shop">
     <div class="dropdown">
         <button class="dropbtn">Filter products ⮟</button>
         <div class="dropdown-content">
@@ -137,7 +158,7 @@
         </div>
     </div>
 </div>
-</div>
+</div> -->
 <?php 
   
   include 'footer.php'?>

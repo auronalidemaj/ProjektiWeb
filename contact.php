@@ -13,6 +13,7 @@
 <?php 
   
   include 'header.php'?>
+  <hr>
 
 <form id="contact-form">
     <div class="form-group">
