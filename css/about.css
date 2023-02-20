@@ -206,7 +206,7 @@ hr {
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  margin: 75px;
+  margin: 85px;
   max-width: 350px;
   min-width: 230px;
   overflow: hidden;
@@ -308,19 +308,19 @@ hr {
   font-size: 20px;
 }
 .p1{
-  height: 100px;
-  width: 24%;
-  float: left;
+  height: 150px;
+  width: 20%;
+  margin-left:-20px;
 }
 .p2{
-  height: 100px;
-  width: 24%;
-  float: left;
+  height: 150px;
+  width: 20%;
+  margin-left: -60px;
 }
 .p3{
-  height: 100px;
-  width: 24%;
-  float:right;
+  height: 150px;
+  width: 20%;
+  margin-left: -40px;
 
 }
 .coach {
