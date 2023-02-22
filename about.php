@@ -19,7 +19,7 @@
             <div class="col">
             <h1 class="h">About us</h1>
             <p class="p"> At FitPLUS, the online fitness store, you will find hundreds of models of fitness products such as exercise bikes, treadmills, gym machines, weight machines at the best price. Discover the fitness equipment you need according to the discipline you practice such as aerobics, cross-training, fitness classes and outdoor training. Whether you start doing fitness or just starting to get in shape, it is very important to choose comfortable and appropriate clothing for the discipline you are doing, doing Pilates is not the same as Spinning or Zumba. With our best price guarantee, you can select your gym clothing and fitness accessories from different brands.</p>
-                <button class="butoni" type = "button" >More</button>
+                <button class="butoni" type = "button" >About us</button>
             </div>
             <div class="col">
                 <div class = "card card1">
