@@ -35,9 +35,15 @@
             <label for="password" >Password</label>
           </div>
           <div id="password_error">Fill out your password correctly</div>
+          <div class="txt_field">
+            <input type="password" name="repeat_password" id="pass" required>
+            <span></span>
+            <label for="repeat_password" >Repeat Password</label>
+          </div>
+          <div id="repeat_password_error">Passwords do not match</div>
           <input type="submit" name="login-btn" value="Signup">
           <div class="signup_link">
-            Already have an account?<a href="login.php">Login</a>
+            Already have an account? <a href="login.php">Login</a>
           </div>
         </form>
       </div>

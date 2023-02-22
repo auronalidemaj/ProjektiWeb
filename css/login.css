@@ -98,7 +98,8 @@ input[type="submit"]:hover{
 }
 .login_form #email_error,
 .login_form #name1_error,
-.login_form #password_error{
+.login_form #password_error,
+.login_form #repeat_password_error{
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 10px;
