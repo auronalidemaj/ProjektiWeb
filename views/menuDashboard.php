@@ -1,6 +1,7 @@
 <?php
 require_once'../MenuController.php';
 require_once'../StoreController.php';
+require_once'../contactController.php';
 ?>
 
 <link rel="stylesheet" href="../css/headerandfooter.css">
@@ -159,6 +160,31 @@ h1{
           <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $store['i_image']?></td>
             <td><a class="a" href="edit-store.php?id=<?php echo $store['Id'];?>">Edit</a></td>
             <td><a class="a" href="delete-store.php?id=<?php echo $store['Id'];?>">Delete</a></td>
+          </tr>
+          <?php endforeach; ?>
+        </tbody> 
+    </table>
+<h1>Contact Dashboard</h1>
+    <table class="content-table">
+        <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Message</th>
+              <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+          <?php
+          $c = new contactController;
+          $allContacts = $c->getAllContacts();
+          foreach($allContacts as $contact):
+          ?>
+          <tr>
+          <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $contact['name']?></td>
+          <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $contact['email']?></td>
+          <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $contact['message']?></td>
+            <td><a class="a" href="delete-contact.php?id=<?php echo $contact['Id'];?>">Delete</a></td>
           </tr>
           <?php endforeach; ?>
         </tbody> 

@@ -1,178 +1,91 @@
 
-#contact-form {
-    width: 400px;
-    margin: 50px auto;
-    padding: 30px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    font-weight: bold;
-  }
-  
-  input, textarea {
-    width: 350px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    max-width: 350px;
-    min-width: 350px;
-    max-height: 150px;
-    min-height: 50px;
-  }
-  
-  button[type="submit"] {
-    background-color:rgba(19, 117, 58, 0.911);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-  }
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  button:hover {
-    background-color: #196b49;
-  }
-  
-  .container{
+.contact-form h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
 
-    max-width: 1170px;
-    margin:auto;
-    margin-left: 400px;
-  }
-  .row{
-    
-    display: flex;
-    flex-wrap: wrap;
-  }
-  ul{
-    list-style: none;
-  }
-  .footer{
-    border-top: 1px solid lightslategray;
-    background-color: white;
-      padding: 70px 0;
-  }
-  .footer-col{
-     width: 25%;
-     padding: 0 15px;
-  }
-  .footer-col h4{
-    font-size: 18px;
-    color: black;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
-  }
-  .footer-col h4::before{
-    content: '';
-    position: absolute;
-    left:0;
-    bottom: -10px;
-    background-color: lightslategray;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-  }
-  .footer-col ul li:not(:last-child){
-    margin-bottom: 10px;
-  }
-  .footer-col ul li a{
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 300;
-    color: black;
-    display: block;
-    transition: all 0.3s ease;
-  } 
-  .footer-col ul li a:hover{
-    color: rgba(19, 117, 58, 0.911);
-    padding-left: 8px;
-  }
-  .footer-col .social-links a{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255,255,255,0.2);
-    margin:0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color:black;
-    transition: all 0.5s ease;
-  }
-  .footer-col .social-links a:hover{
-    color: rgba(19, 117, 58, 0.911);
-  }
-  .cnt{
-      color: black;
-  }
+.txt_field {
+  position: relative;
+  margin-bottom: 1.5em;
+}
 
-  @media only screen and (max-width: 767px) {
-    .nav {
-      height: 40px;
-      width: 100%;
-    }
-    .nav ul li {
-      margin-left: 10px;
-      font-size: 10px;
-    }
-    .nav2 ul li {
-      margin-right: 50px;
-    }
-  
-    .nav2 ul li span {
-      font-size: 12px;
-    }
-  
-    #contact-form {
-        width: 250px;
-        margin: 30px auto;
-        padding: 20px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        font-size: 10px;
-      }
-      
-      .form-group {
-        margin-bottom: 10px;
-      }
-      
-      label {
-        font-weight: bold;
-      }
-      
-      input, textarea {
-        width: 200px;
-        padding: 5px;
-        height: 30px;
-        border-radius: 3px;
-        border: 1px solid #ddd;
-        max-width: 200px;
-        min-width: 200px;
-        max-height: 30px;
-        min-height: 10px;
-      }
+.txt_field input, .txt_field textarea {
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  background-color: transparent;
+}
 
-      textarea {
-        max-height: 40px;
-        height: 40px;
-      }
-      
-      button[type="submit"] {
-        background-color:rgba(19, 117, 58, 0.911);
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 10px;
-        border: none;
-        cursor: pointer;
-      }
+.txt_field input:focus, .txt_field textarea:focus {
+  outline: none;
+}
+
+.txt_field label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1em;
+  pointer-events: none;
+  transition: all 0.3s ease-out;
+}
+
+.txt_field input:focus ~ label, .txt_field textarea:focus ~ label, .txt_field input:valid ~ label, .txt_field textarea:valid ~ label {
+  transform: translateY(-100%);
+  font-size: 0.8em;
+  color: #333;
+}
+
+.txt_field span {
+  position: absolute;
+  bottom: -1.5em;
+  left: 0;
+  font-size: 0.8em;
+  color: red;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.txt_field input:invalid + span, .txt_field textarea:invalid + span {
+  visibility: visible;
+  opacity: 1;
+}
+
+#subject {
+  resize: none;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  background-color: transparent;
+}
+
+input[type="submit"] {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(19, 117, 58, 0.911);;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.contact-form {
+  width: 70%;
+  max-width: 500px;
+  margin: 2em auto;
+}

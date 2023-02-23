@@ -12,25 +12,29 @@
 <body>
 <?php 
   
-  include 'header.php'?>
-  <hr>
+  include 'header.php';
+  include 'Contact2PHP.php'?>
 
-<form id="contact-form">
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-    </div>
-    <button type="submit">Submit</button>
-  </form>
-  
+  <hr>
+  <div class="form-group">
+        <div class="center">
+          <br>
+            <h1>Contact Form</h1>
+            <form class="contact-form" action="Contact2PHP.php" method="post" name="form" onsubmit="return validated()">
+              <div class="txt_field">
+                <input autocomplete="off" type="text" name="name" placeholder="Name: " id="name" required>
+                <span></span>
+              </div>
+              <div class="txt_field">
+                <input autocomplete="off" type="email" name="email" placeholder="Email: " id="email" required>
+                <span></span>
+              </div>
+              <textarea id="subject" name="message" placeholder="Type your message here:" id="message" rows="10" cols="70"></textarea>
+              <input type="submit" name="submit-btn" value="SEND">
+</div>
+</form>
+</div>
+
   <?php 
   
   include 'footer.php'?>

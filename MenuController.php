@@ -11,14 +11,14 @@ class MenuController{
     //CRUD
 
     public function readData(){
-        $query = $this->db->pdo->query('SELECT * from menu');
+        $query = $this->db->pdo->query('SELECT * from news');
 
         return $query->fetchAll();
     }
 
     public function insert($request){
         $request['image'] = './img/' .$request['image'];
-        $query = $this->db->pdo->prepare('INSERT INTO menu (menu_image, menu_title, menu_body)
+        $query = $this->db->pdo->prepare('INSERT INTO news (menu_image, menu_title, menu_body)
         VALUES (:menu_image, :menu_title, :menu_body)');
 
         $query->bindParam(':menu_image', $request['image']);
@@ -30,7 +30,7 @@ class MenuController{
     }
 
     public function edit($id){
-        $query = $this->db->pdo->prepare('SELECT * from menu WHERE id = :id');
+        $query = $this->db->pdo->prepare('SELECT * from news WHERE id = :id');
         $query->bindParam(':id', $id);
         $query->execute();
 
@@ -39,7 +39,7 @@ class MenuController{
 
     public function update($request, $id){
         $request['image'] = './img/' .$request['image'];
-        $query = $this->db->pdo->prepare('UPDATE menu SET menu_image = :menu_image,
+        $query = $this->db->pdo->prepare('UPDATE news SET menu_image = :menu_image,
         menu_title = :menu_title, menu_body = :menu_body WHERE id = :id');
         $query->bindParam(':menu_image', $request['image']);
         $query->bindParam(':menu_title', $request['title']);
@@ -51,7 +51,7 @@ class MenuController{
     }
 
     public function delete($id){
-        $query = $this->db->pdo->prepare('DELETE from menu WHERE id=:id');
+        $query = $this->db->pdo->prepare('DELETE from news WHERE id=:id');
         $query->bindParam(':id', $id);
         $query->execute();
 

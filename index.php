@@ -31,6 +31,7 @@
         </div>
       </div>
       <hr>
+      <h1 class="testimonals">Products to checkout</h1>
       <div class="showitems">
         <div class="item1">
             <img src="img/item1.jpg" alt="">
@@ -64,16 +65,17 @@
     </div>
     <hr>
     <div class="subscribe">
-        <div class="subscribe-box">
-            <h1>Subscribe to our newsletter</h1>
-            <span>Get notified whenever we update our online store</span>
-            <hr>
-            <form action="#">
-              <input type="email" name="email_address" placeholder="Email Address">
-              <button type="submit">Subscribe</button>
-            </form>
-        </div>
+    <div class="subscribe-box">
+        <h1>Subscribe to our newsletter</h1>
+        <span>Get notified whenever we update our online store</span>
+        <hr>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+          <input type="email" name="email_address" placeholder="Email Address" required>
+          <button type="submit">Subscribe</button>
+        </form>
     </div>
+</div>
+
     <?php 
   
     include 'footer.php'?>
