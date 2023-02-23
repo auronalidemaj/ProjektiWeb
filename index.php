@@ -13,7 +13,8 @@
 
 <?php 
   
-  include 'header.php'?>
+  include 'header.php';
+  include 'subscribe.php'?>
 
 <div class="fotojaa">
         <img src="img/main1.jpg" alt="" id="mainF">
@@ -70,11 +71,11 @@
         <span>Get notified whenever we update our online store</span>
         <hr>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-          <input type="email" name="email_address" placeholder="Email Address" required>
-          <button type="submit">Subscribe</button>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <button type="submit" name="submit-btn">Subscribe</button>
         </form>
-    </div>
 </div>
+    </div>
 
     <?php 
   

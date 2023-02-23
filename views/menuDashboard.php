@@ -2,6 +2,7 @@
 require_once'../MenuController.php';
 require_once'../StoreController.php';
 require_once'../contactController.php';
+require_once'../subscribeController.php';
 ?>
 
 <link rel="stylesheet" href="../css/headerandfooter.css">
@@ -185,6 +186,27 @@ h1{
           <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $contact['email']?></td>
           <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $contact['message']?></td>
             <td><a class="a" href="delete-contact.php?id=<?php echo $contact['Id'];?>">Delete</a></td>
+          </tr>
+          <?php endforeach; ?>
+        </tbody> 
+    </table>
+    <h1>Subscriber Dashboard</h1>
+    <table class="content-table">
+        <thead>
+            <tr>
+              <th>Email</th>
+              <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+          <?php
+          $ss = new subController;
+          $allSubs = $ss->getAllSubscribers();
+          foreach($allSubs as $subs):
+          ?>
+          <tr>
+          <td style="max-width: 50ch; word-wrap: break-word;"><?php echo $subs['email']?></td>
+            <td><a class="a" href="delete-subscriber.php?id=<?php echo $subs['Id'];?>">Delete</a></td>
           </tr>
           <?php endforeach; ?>
         </tbody> 
