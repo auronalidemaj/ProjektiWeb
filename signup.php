@@ -1,55 +1,60 @@
+<?php
+if(isset($_GET['error'])){
+  $error = $_GET['error'];
+  echo '<script>alert("'.$error.'")</script>';
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fit+ - SignUp</title>
+    <title>SignUp</title>
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/headerandfooter.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
-<body>
+
 <?php 
-  
-  include 'header.php'?>
-  <hr>
-      <div class="center">
-        <h1>Signup</h1>
-        <form class="login_form" action="./signup.php" method="post" name="form" onsubmit="return validated()">
-            <div class="txt_field">
-                <input autocomplete="off" type="email" name="emailaddress" id="email" required>
+include "header.php"; 
+
+?>
+<hr>
+    <body>
+
+          <div class="center">
+            <h1>Create Account</h1>
+            <form class="login_form" action="new/registerController.php" method="post" name="form" onsubmit="return validated()">
+                <div class="txt_field">
+                    <input autocomplete="off" type="text" name="register-emailaddress" id="email" required>
+                    <span></span>
+                    <label for="emailaddress">Email</label>
+                </div>
+              <div class="txt_field">
+                <input autocomplete="off" type="text" name="register-username" id="user" required>
                 <span></span>
-                <label for="emailaddress">Email</label>
+                <label for="username">Username</label>
               </div>
-              <div id="email_error">Fill out your email correctly</div>
-          <div class="txt_field">
-            <input autocomplete="off" type="text" name="username" id="user" required>
-            <span></span>
-            <label for="username">Username</label>
+              <div class="txt_field">
+                <input type="password" name="register-password" id="pass" required>
+                <span></span>
+                <label for="password" >Password</label>
+              </div>
+              <input type="submit" name="register-btn" value="REGISTER">
+              <div class="signup_link">
+                Already have an account?<a href="login.php">Sign in!</a>
+              </div>
+            </form>
           </div>
-          <div id="name1_error">Fill out your username correctly</div>
-          <div class="txt_field">
-            <input type="password" name="password" id="pass" required>
-            <span></span>
-            <label for="password" >Password</label>
+          
           </div>
-          <div id="password_error">Fill out your password correctly</div>
-          <div class="txt_field">
-            <input type="password" name="repeat_password" id="pass" required>
-            <span></span>
-            <label for="repeat_password" >Repeat Password</label>
-          </div>
-          <div id="repeat_password_error">Passwords do not match</div>
-          <input type="submit" name="login-btn" value="Signup">
-          <div class="signup_link">
-            Already have an account? <a href="login.php">Login</a>
-          </div>
-        </form>
-      </div>
-      <?php 
-  
-  include 'footer.php'?>
-   <script src="javascript/signup.js"></script>
+          
+       <?php 
+    include "footer.php";  
+    include_once 'new/registerController.php';
+?>
+    <script src="javascript/signup.js"></script>
 </body>
 </html>

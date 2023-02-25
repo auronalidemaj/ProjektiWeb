@@ -3,8 +3,11 @@ require_once'../MenuController.php';
 require_once'../StoreController.php';
 require_once'../contactController.php';
 require_once'../subscribeController.php';
+include_once '../new/userMapper.php';
+include_once '../new/adminClass.php';
+include_once '../new/simpleUserClass.php';
+session_start();
 ?>
-
 <link rel="stylesheet" href="../css/headerandfooter.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
@@ -94,10 +97,22 @@ h1{
             </ul>
         </div>
         <div class="nav3">
-            <ul>
-                <li><a href="menuDashboard.php" class="hovernav">dashboard</a></li>
-                <li><a href="../login.php" class="hovernav">login</a></li>
-            </ul>
+        <ul>
+            <?php 
+                
+                if (isset($_SESSION['loggedin'])) { 
+                    
+                    echo '<li><a href="../new/logout.php" class="hovernav">log out</a></li>';
+                    
+                    if ($_SESSION['role'] == 1) { // If user is an admin, show dashboard button
+                      
+                        echo '<li><a href="menuDashboard.php" class="hovernav">dashboard</a></li>';
+                    }
+                } else { // If user is not logged in, show login button
+          
+                   echo ' <li><a href="../login.php" class="hovernav">login</a></li>';
+                 } ?>
+                 </ul>
         </div>
     </div>
 </nav>
@@ -211,4 +226,36 @@ h1{
           <?php endforeach; ?>
         </tbody> 
     </table>
+    <h1>User Dashboard</h1>
+    <h2 class="b"><a class="a"href="create-admin.php">Create a admin</a></h1>
+    <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $mapper = new userMapper();
+                $adminList = $mapper->getAllAdmins();
+
+                foreach ($adminList as $mapper) {
+                ?>
+                    <tr>
+                        <td><?php echo $mapper['email']; ?></td>
+                        <td><?php echo $mapper['username']; ?></td>
+                        <td><?php echo $mapper['userpassword']; ?></td>
+                        <td><a class="a" href="edit-admin.php?id=<?php echo $mapper['userID'];?>">Edit</a></td>
+                        <td><a class="a" href="delete-admin.php?id=<?php echo $mapper['userID'];?>">Delete</td>
+                    </tr>
+                <?php
+                }
+                ?>
+            </tbody>
+        </table>
+
 </div>

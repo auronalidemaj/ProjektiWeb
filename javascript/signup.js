@@ -1,7 +1,7 @@
-let name1 = document.forms['form']['username'];
-let password = document.forms['form']['password'];
-let repeat_password = document.forms['form']['repeat_password'];
-let email = document.forms['form']['email'];
+let name1 = document.forms['form']['register-username'];
+let password = document.forms['form']['register-password'];
+let repeat_password = document.forms['form']['register-repeat_password'];
+let email = document.forms['form']['register-email'];
 
 let name1_error = document.getElementById('name1_error');
 let password_error = document.getElementById('password_error');

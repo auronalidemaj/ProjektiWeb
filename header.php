@@ -1,3 +1,10 @@
+<?php
+include_once 'new/adminClass.php';
+include_once 'new/simpleUserClass.php';
+session_start();
+?>
+
+
 <nav>
     <div class="nav">
         <div class="nav1">
@@ -14,11 +21,23 @@
                 <li>fit<span>+</span></li>
             </ul>
         </div>
-        <div class="nav3">
+        <div class="nav3">   
             <ul>
-                <li><a href="views/menuDashboard.php" class="hovernav">dashboard</a></li>
-                <li><a href="login.php" class="hovernav">login</a></li>
-            </ul>
+            <?php 
+                
+                if (isset($_SESSION['loggedin'])) { 
+                    
+                    echo '<li><a href="new/logout.php" class="hovernav">log out</a></li>';
+                    
+                    if ($_SESSION['role'] == 1) { // If user is an admin, show dashboard button
+                      
+                        echo '<li><a href="views/menuDashboard.php" class="hovernav">dashboard</a></li>';
+                    }
+                } else { // If user is not logged in, show login button
+          
+                   echo ' <li><a href="login.php" class="hovernav">login</a></li>';
+                 } ?>
+                 </ul>
         </div>
     </div>
 </nav>
