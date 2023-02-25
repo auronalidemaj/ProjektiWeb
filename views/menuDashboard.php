@@ -226,7 +226,7 @@ h1{
           <?php endforeach; ?>
         </tbody> 
     </table>
-    <h1>User Dashboard</h1>
+    <h1>Admin Dashboard</h1>
     <h2 class="b"><a class="a"href="create-admin.php">Create a admin</a></h1>
     <table class="content-table">
             <thead>
@@ -249,8 +249,39 @@ h1{
                         <td><?php echo $mapper['email']; ?></td>
                         <td><?php echo $mapper['username']; ?></td>
                         <td><?php echo $mapper['userpassword']; ?></td>
-                        <td><a class="a" href="edit-admin.php?id=<?php echo $mapper['userID'];?>">Edit</a></td>
+                        <td><a class="a" href="set-user.php?id=<?php echo $mapper['userID'];?>">Set as User</td>
                         <td><a class="a" href="delete-admin.php?id=<?php echo $mapper['userID'];?>">Delete</td>
+                        
+                    </tr>
+                <?php
+                }
+                ?>
+            </tbody>
+        </table>
+        <h1>User Dashboard</h1>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $mapper = new userMapper();
+                $simpleList = $mapper->getAllSimpleUsers();
+
+                foreach ($simpleList as $mapper) {
+                ?>
+                    <tr>
+                        <td><?php echo $mapper['email']; ?></td>
+                        <td><?php echo $mapper['username']; ?></td>
+                        <td><?php echo $mapper['userpassword']; ?></td>
+                        <td><a class="a" href="set-admin.php?id=<?php echo $mapper['userID'];?>">Set as Admin</td>
+                        <td><a class="a" href="delete-user.php?id=<?php echo $mapper['userID'];?>">Delete</td>
                     </tr>
                 <?php
                 }
