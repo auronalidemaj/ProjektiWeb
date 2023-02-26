@@ -107,20 +107,10 @@ class RegisterLogic
             }
     }
 
-    // public function insertData()
-    // {
-    //     $user = new SimpleUser($this->email, $this->username, $this->password, 0);
-
-    //     $mapper = new UserMapper();
-    //     $mapper->insertUser($user);
-    //     header("Location:../index.php");
-    // }
-
     public function insertData()
 {
     $mapper = new UserMapper();
 
-    // Get the total number of users in the database
     $numUsers = $mapper->countUsers();
 
     if ($numUsers < 2) {
