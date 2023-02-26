@@ -215,6 +215,7 @@ hr {
   width: 100%;
 }
 
+
 .our-classes * {
   box-sizing: border-box;
   transition: all 0.35s ease;
@@ -364,4 +365,10 @@ hr {
   color: white;
   margin-bottom: 20px;
   font-size: 14px;
+}
+
+.klasat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

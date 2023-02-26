@@ -7,7 +7,7 @@ class Database{
             if (session_status() == PHP_SESSION_NONE) {
                 session_start();
             }   
-            $link = new PDO('mysql:host=localhost;dbname=fitplus', 'root','');
+            $link = new PDO('mysql:host=localhost;dbname=fit', 'root','');
             $this->pdo = $link;
         }catch(PDOException $exception){
             die($exception->getMessage());

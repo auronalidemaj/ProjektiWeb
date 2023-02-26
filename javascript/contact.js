@@ -12,5 +12,4 @@ form.addEventListener('submit', (event) => {
     return;
   }
 
-  // alert(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
 });

@@ -77,6 +77,7 @@
         </div>
     </div>
     <hr>
+    <div class="klasat">
     <figure class="our-classes">
         <img src="img/yoga-grupi.jpeg" alt="sample89" />
         <figcaption>
@@ -95,7 +96,7 @@
           <h3>Pilates</h3>
         </figcaption>
       </figure>
-
+      </div>
   <div class = "paragrafi">
     <div class = "p1">We offer the best classes you can find out there.</div>
     <div class = "p2">We offer the best classes you can find out there.</div>

@@ -8,12 +8,12 @@ name1.addEventListener('input', name1_Verify);
 password.addEventListener('input', password_Verify);
 
 function validated(){
-    if(!/^[A-Za-z0-9_]{6,}$/.test(name1.value)){
+    if(!name1_Verify()){
         name1_error.style.display = "block";
         name1.focus();
         return false;
     }
-    if(!/^[A-Za-z0-9!@#$%^&*()_]{6,}$/.test(password.value)){
+    if(!password_Verify()){
         password_error.style.display = "block";
         password.focus();
         return false;
@@ -22,14 +22,14 @@ function validated(){
 }
 
 function name1_Verify(){
-    if(/^[A-Za-z0-9_]{6,}$/.test(name1.value)){
+    if(/^[a-zA-Z0-9._-]{3,15}$/.test(name1.value)){
         name1_error.style.display = "none";
         return true;
     }
 }
 
 function password_Verify(){
-    if(/^[A-Za-z0-9!@#$%^&*()_]{6,}$/.test(password.value)){
+    if(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/.test(password.value)){
         password_error.style.display = "none";
         return true;
     }

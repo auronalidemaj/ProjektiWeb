@@ -145,3 +145,16 @@
   .cnt{
       color: black;
   }
+  @media only screen and (max-width: 767px) {
+    .nav {
+      height: 40px;
+      width: 100%;
+    }
+    .nav ul li {
+      margin-left: 10px;
+      font-size: 10px;
+    }
+    .nav2 ul li {
+      margin-right: 0px;
+    }
+  }

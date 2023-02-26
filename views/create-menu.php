@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
         <input type="text" name="title" class="inputT" maxlength="50">
         <br>
         Content:
-        <input type="body" name="body" class="inputta" maxlength="150">
+        <input type="body" name="body" class="inputta" maxlength="200">
         <br>
         <input type="submit" name="submit" value="Save" class="but">
     </form>

@@ -32,16 +32,19 @@ include "header.php";
                     <span></span>
                     <label for="emailaddress">Email</label>
                 </div>
+                <div id="email_error">Fill out your email correctly</div>
               <div class="txt_field">
                 <input autocomplete="off" type="text" name="register-username" id="user" required>
                 <span></span>
                 <label for="username">Username</label>
               </div>
+              <div id="name1_error">Fill out your username correctly</div>
               <div class="txt_field">
                 <input type="password" name="register-password" id="pass" required>
                 <span></span>
                 <label for="password" >Password</label>
               </div>
+              <div id="password_error">Fill out your password correctly</div>
               <input type="submit" name="register-btn" value="REGISTER">
               <div class="signup_link">
                 Already have an account?<a href="login.php">Sign in!</a>
@@ -50,6 +53,9 @@ include "header.php";
           </div>
           
           </div>
+          <br>
+          <br>
+          <br>
           
        <?php 
     include "footer.php";  

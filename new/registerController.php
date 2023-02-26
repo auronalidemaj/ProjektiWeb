@@ -2,7 +2,6 @@
 include_once 'simpleUserClass.php';
 include_once 'adminClass.php';
 require_once 'userMapper.php';
-// include_once '../signup.php';
 if (isset($_POST['register-btn'])) {
     $register = new RegisterLogic($_POST);
     $EmptyFields=$register->emptyFields();
@@ -15,7 +14,6 @@ if (isset($_POST['register-btn'])) {
         $register->insertData();
         $message = "Registered succesfully!";
     header("Location:../login.php?error=".urlencode($message));
-        // return header("Location:../login.php");
     } else if($EmptyFields){
         $message = "Fill all fields.";
         header("Location:../signup.php?error=".urlencode($message));
@@ -33,10 +31,10 @@ else if($UsernameExists){
     header("Location:../signup.php?error=".urlencode($message));
 }
 else if(!$UsernameisValid){
-    $message = "Username nuk mund të përmbajë hapësira as karaktere speciale (vetëm . _ - lejohen)!";
+    $message = "Username invalid!";
     header("Location:../signup.php?error=".urlencode($message));
 }else if(!$PasswordisValid){
-    $message = "Password duhet të ketë së paku 8 karaktere dhe të përmbajë shkronja të vogla, të mëdha, numra dhe karaktere speciale!";
+    $message = "Password invalid!";
     header("Location:../signup.php?error=".urlencode($message));
 }
 }

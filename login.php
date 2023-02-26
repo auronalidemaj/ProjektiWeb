@@ -29,11 +29,13 @@ include "header.php";
                 <span></span>
                 <label for="username">Username</label>
               </div>
+              <div id="name1_error">Fill out your username correctly</div>
               <div class="txt_field">
                 <input type="password" name="password" id="pass" required>
                 <span></span>
                 <label for="password" >Password</label>
               </div>
+              <div id="password_error">Fill out your password correctly</div>
               <input type="submit" name="login-btn" value="SIGN IN">
               <div class="signup_link">
                 Don't have an account? <a href="signup.php">Sign up!</a>
@@ -41,6 +43,9 @@ include "header.php";
             </form>
           </div>
           </div>
+          <br>
+          <br>
+          <br>
        <?php 
     include "footer.php"; 
     include "new/loginController.php"; 
