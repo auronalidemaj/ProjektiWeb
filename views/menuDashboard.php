@@ -234,7 +234,7 @@ h1{
                     <th>Email</th>
                     <th>Username</th>
                     <th>Password</th>
-                    <th>Edit</th>
+                    <th>Role</th>
                     <th>Delete</th>
                 </tr>
             </thead>
@@ -265,7 +265,7 @@ h1{
                     <th>Email</th>
                     <th>Username</th>
                     <th>Password</th>
-                    <th>Edit</th>
+                    <th>Role</th>
                     <th>Delete</th>
                 </tr>
             </thead>
